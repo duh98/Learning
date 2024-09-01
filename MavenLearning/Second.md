@@ -38,3 +38,4 @@
     - src/main/webapp/index.html：Web 应用的入口页面。
     - src/test/java：存放项目的测试代码。
     - src/test/resources：存放测试相关的资源文件，如测试配置文件等。
+
