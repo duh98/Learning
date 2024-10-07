@@ -23,3 +23,63 @@
 - 6.缓存控制：在系统中有些数据可以缓存起来以提高访问速度，可以使用AOP来实现缓存控制的功能，可以在方法执行前查询缓存中是否有数据，如果有则返回，否则执行方法并将方法返回值存入缓存中。
 - 7.动态代理：AOP的实现方式之一是通过动态代理，可以代理某个类的所有方法，用于实现各种功能。
 
+## AOP实例
+---
+    //业务方法
+    public int add(int i, int j) {
+    
+        int result = i + j;
+    
+        return result;
+    }
+---
+
+---
+    // @Aspect表示这个类是一个切面类
+    @Aspect
+    // @Component注解保证这个切面类能够放入IOC容器
+    @Component
+    public class LogAspect {
+        
+    // @Before注解：声明当前方法是前置通知方法
+    // value属性：指定切入点表达式，由切入点表达式控制当前通知方法要作用在哪一个目标方法上
+    @Before(value = "execution(public int com.atguigu.proxy.CalculatorPureImpl.add(int,int))")
+    public void printLogBeforeCore() {
+        System.out.println("[AOP前置通知] 方法开始了");
+    }
+    
+    @AfterReturning(value = "execution(public int com.atguigu.proxy.CalculatorPureImpl.add(int,int))")
+    public void printLogAfterSuccess() {
+        System.out.println("[AOP返回通知] 方法成功返回了");
+    }
+    
+    @AfterThrowing(value = "execution(public int com.atguigu.proxy.CalculatorPureImpl.add(int,int))")
+    public void printLogAfterException() {
+        System.out.println("[AOP异常通知] 方法抛异常了");
+    }
+    
+    @After(value = "execution(public int com.atguigu.proxy.CalculatorPureImpl.add(int,int))")
+    public void printLogFinallyEnd() {
+        System.out.println("[AOP后置通知] 方法最终结束了");
+    }
+    
+    }
+---
+---
+    <!-- xml方式开启     -->
+    <?xml version="1.0" encoding="UTF-8"?>
+    <beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!-- 进行包扫描-->
+    <context:component-scan base-package="com.atguigu" />
+    <!-- 开启aspectj框架注解支持-->
+    <aop:aspectj-autoproxy />
+    </beans>
+---
+
+## AOP切点语法
+![语法](/Spring/img/img006.webp)
