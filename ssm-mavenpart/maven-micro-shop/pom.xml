@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>maven-micro-shop</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <!-- 设置成pom文件，默认为jar，同时删除src包 -->
+    <packaging>pom</packaging>
+    <!-- 显示继承关系，以下皆为子项目   -->
+    <modules>
+        <module>user-service</module>
+        <module>order-service</module>
+        <module>common-service</module>
+        <module>util-service</module>
+    </modules>
+
+</project>
