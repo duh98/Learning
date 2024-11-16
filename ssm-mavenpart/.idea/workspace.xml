@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30290db8-d2c5-4d4a-a755-a12f942a11a4" name="Changes" comment="" />
+    <list default="true" id="30290db8-d2c5-4d4a-a755-a12f942a11a4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/maven-micro-shop/order-service/src/main/java/org/example/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +45,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "configurable.group.editor",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -114,7 +116,7 @@
       <workItem from="1728292846042" duration="5568000" />
       <workItem from="1731746394471" duration="5598000" />
       <workItem from="1731754129207" duration="427000" />
-      <workItem from="1731754571263" duration="1095000" />
+      <workItem from="1731754571263" duration="1468000" />
     </task>
     <servers />
   </component>
