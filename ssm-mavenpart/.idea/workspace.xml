@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30290db8-d2c5-4d4a-a755-a12f942a11a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/maven-micro-shop/common-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven-micro-shop/order-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven-micro-shop/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven-micro-shop/user-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven-micro-shop/util-service/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="30290db8-d2c5-4d4a-a755-a12f942a11a4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728292845005</updated>
-      <workItem from="1728292846042" duration="1824000" />
+      <workItem from="1728292846042" duration="2524000" />
     </task>
     <servers />
   </component>
