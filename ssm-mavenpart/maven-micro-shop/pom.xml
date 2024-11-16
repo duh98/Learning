@@ -16,5 +16,51 @@
         <module>common-service</module>
         <module>util-service</module>
     </modules>
+    <properties>
+        <spring.version>6.0.6</spring.version>
+        <jackson.version>2.13.4</jackson.version>
+        <shiro.version>1.4.0</shiro.version>
+        <commons.version>2.11.0</commons.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
+    <!-- 依赖管理 -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- spring-context会依赖传递core/beans -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
+            <!-- jackson-databind会依赖传递core/annotations -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+
+            <!-- shiro-core -->
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-core</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+            <!-- commons-io -->
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons.version}</version>
+            </dependency>
+
+        </dependencies>
+
+    </dependencyManagement>
+
+    <dependencies>
+        <!-- 父工程添加依赖，会自动传递给所有子工程，不推荐！ -->
+    </dependencies>
 </project>
