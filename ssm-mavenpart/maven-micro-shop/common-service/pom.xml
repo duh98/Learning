@@ -8,6 +8,20 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
   <artifactId>common-service</artifactId>
+  <dependencies>
+    <dependency>
+      <!-- 除非特殊版本限制，不需要显式声明版本号，可直接继承父工程声明的依赖版本 -->
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+    </dependency>
+    <!-- 通过以下方式在项目中引用工具类包-->
+    <dependency>
+      <groupId>org.example</groupId>
+      <artifactId>util-service</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+
+  </dependencies>
   <!-- web服务打包-->
   <packaging>war</packaging>
   <!--  子模块可以显式声明版本号，覆盖父版本号，也可以继承父版本号  -->

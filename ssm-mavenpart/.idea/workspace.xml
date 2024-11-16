@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30290db8-d2c5-4d4a-a755-a12f942a11a4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/maven-micro-shop/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven-micro-shop/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-micro-shop/common-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven-micro-shop/common-service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +28,7 @@
     "Application.Main (1).executor": "Run",
     "Application.Main.executor": "Run",
     "Maven.maven-micro-shop [clean].executor": "Run",
+    "Maven.util-service [install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -89,7 +90,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728292845005</updated>
-      <workItem from="1728292846042" duration="4856000" />
+      <workItem from="1728292846042" duration="5568000" />
+      <workItem from="1731746394471" duration="1380000" />
     </task>
     <servers />
   </component>
